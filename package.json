@@ -1,0 +1,19 @@
+{
+  "name": "diareplacement",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "draft-js": "^0.10.4",
+    "react": "^16.1.1",
+    "react-bootstrap": "",
+    "react-dom": "^16.1.1",
+    "react-draft-wysiwyg": "^1.10.12",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
