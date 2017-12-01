@@ -48,33 +48,33 @@ class NewPost extends Component {
 
     render() {
         return (
-            <div class='post container-fluid'>                
+            <div className='post container-fluid'>                
                 <form>
-                <label for='topic'>Topic:</label>
-                    <input type='text' class="form-control" id='topic' 
+                <label forhtml='topic'>Topic:</label>
+                    <input type='text' className="form-control" id='topic' 
                         value={this.state.topic}
                         onChange={this.updateTopic.bind(this)}/>
-                    <label for='post'>Post:</label>
-                    <textarea  class="form-control" rows='20' id='post' 
+                    <label forhtml='post'>Post:</label>
+                    <textarea  className="form-control" rows='20' id='post' 
                         value={this.state.text} 
                         onChange={this.updateForm.bind(this)}/>
                     <Emoticons />
                 </form>
                 <br />
-                <label forHtml='tags'>@tags</label>
+                <label forhtml='tags'>@tags</label>
                 <form>
                     {this.props.favoriteTags.map((item) => {
                         return (
-                            <div class='checkbox-inline'>
-                                <label class='checkbox'><input type='checkbox' value='' />{item.name}</label>
+                            <div className='checkbox-inline'>
+                                <label className='checkbox'><input type='checkbox' value='' />{item.name}</label>
                             </div>
                         )
                     })} 
                 </form>
-                <div class='btn-toolbar'>
-                    <button class='btn btn-primary' onClick={this.publish}>Publish</button>
-                    <button class='btn'>Preview</button>
-                    <button class='btn'>Save as draft</button>
+                <div className='btn-toolbar'>
+                    <button className='btn btn-primary' onClick={this.publish}>Publish</button>
+                    <button className='btn'>Preview</button>
+                    <button className='btn'>Save as draft</button>
                 </div>
                 <br />
             </div>

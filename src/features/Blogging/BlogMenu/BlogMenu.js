@@ -11,16 +11,16 @@ const MenuItem = (props) => {
 class BlogMenu extends Component {
 
     menuItems = [
-        {name:"Main", url:"http://ya.ru"},
-        {name:"Blog", url:"http://ya.ru"},
-        {name:"Add a post", url:"http://ya.ru"},
-        {name:"User Profile", url: "http://ya.ru"}
+        {name: 'Main', url:'main'},
+        {name: 'Blog', url: 'myblog'},
+        {name: 'Add a post', url: 'newpost'},
+        {name: 'User Profile', url: 'userprofile'}
     ];
 
     
     render() {
         return (
-            <div class="menu">
+            <div className='menu'>
                 <h2>Menu</h2>
                 <ul >
                     {this.menuItems.map((item) => {

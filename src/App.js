@@ -29,12 +29,12 @@ class App extends Component {
     }
 
     return (
-      <div class='container-fluid'>
+      <div className='container-fluid'>
       <Grid fluid='true'>
         <Row className="show-grid is-table-row">
             <Col  sm={12} md={2} lg={2}>
               <UserInfoBlock />
-              <BlogMenu />
+              <BlogMenu navigate={this.updateContext}/>
             </Col>
             <Col  sm={12} md={10} lg={10}>{content}</Col>
         </Row>
